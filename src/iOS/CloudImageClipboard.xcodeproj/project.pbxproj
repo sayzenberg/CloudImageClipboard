@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37B5012F96B6ED51445DFD48 /* Pods_CloudImageClipboardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F816C9B6A05446C8A664ADDF /* Pods_CloudImageClipboardTests.framework */; };
+		57FAC487E822589273542F8B /* Pods_CloudImageClipboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AC03B6AEA7B0DD938C77D8F /* Pods_CloudImageClipboard.framework */; };
+		64263C57FB11EFC4E5D737E8 /* Pods_CloudImageClipboardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96DA18D26DAD204C19825584 /* Pods_CloudImageClipboardUITests.framework */; };
+		B1CA47AE210545C600F389E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA47AD210545C600F389E0 /* AppDelegate.swift */; };
+		B1CA47B3210545C600F389E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1CA47B1210545C600F389E0 /* Main.storyboard */; };
+		B1CA47B6210545C600F389E0 /* CloudImageClipboard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1CA47B4210545C600F389E0 /* CloudImageClipboard.xcdatamodeld */; };
+		B1CA47B8210545C600F389E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1CA47B7210545C600F389E0 /* Assets.xcassets */; };
+		B1CA47BB210545C600F389E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1CA47B9210545C600F389E0 /* LaunchScreen.storyboard */; };
+		B1CA47C6210545C600F389E0 /* CloudImageClipboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA47C5210545C600F389E0 /* CloudImageClipboardTests.swift */; };
+		B1CA47D1210545C600F389E0 /* CloudImageClipboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CA47D0210545C600F389E0 /* CloudImageClipboardUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1CA47C2210545C600F389E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1CA47A2210545C500F389E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1CA47A9210545C500F389E0;
+			remoteInfo = CloudImageClipboard;
+		};
+		B1CA47CD210545C600F389E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1CA47A2210545C500F389E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1CA47A9210545C500F389E0;
+			remoteInfo = CloudImageClipboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A367CA55E021855C58F57D7 /* Pods-CloudImageClipboardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudImageClipboardTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudImageClipboardTests/Pods-CloudImageClipboardTests.debug.xcconfig"; sourceTree = "<group>"; };
+		133AF2BD5CB5F59588153255 /* Pods-CloudImageClipboardUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudImageClipboardUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudImageClipboardUITests/Pods-CloudImageClipboardUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2928F021D1102C8D429E4B4E /* Pods-CloudImageClipboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudImageClipboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudImageClipboard/Pods-CloudImageClipboard.release.xcconfig"; sourceTree = "<group>"; };
+		33F4E99F335421BB7A8B7CFC /* Pods-CloudImageClipboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudImageClipboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudImageClipboard/Pods-CloudImageClipboard.debug.xcconfig"; sourceTree = "<group>"; };
+		4AC03B6AEA7B0DD938C77D8F /* Pods_CloudImageClipboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudImageClipboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96DA18D26DAD204C19825584 /* Pods_CloudImageClipboardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudImageClipboardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1CA47AA210545C500F389E0 /* CloudImageClipboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudImageClipboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1CA47AD210545C600F389E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B1CA47AF210545C600F389E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B1CA47B2210545C600F389E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B1CA47B5210545C600F389E0 /* CloudImageClipboard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CloudImageClipboard.xcdatamodel; sourceTree = "<group>"; };
+		B1CA47B7210545C600F389E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1CA47BA210545C600F389E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B1CA47BC210545C600F389E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1CA47C1210545C600F389E0 /* CloudImageClipboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudImageClipboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1CA47C5210545C600F389E0 /* CloudImageClipboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudImageClipboardTests.swift; sourceTree = "<group>"; };
+		B1CA47C7210545C600F389E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1CA47CC210545C600F389E0 /* CloudImageClipboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudImageClipboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1CA47D0210545C600F389E0 /* CloudImageClipboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudImageClipboardUITests.swift; sourceTree = "<group>"; };
+		B1CA47D2210545C600F389E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D60EF47738BE2A2E28CD0268 /* Pods-CloudImageClipboardUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudImageClipboardUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudImageClipboardUITests/Pods-CloudImageClipboardUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E6A78BA5749D0EC0BE0AF3B3 /* Pods-CloudImageClipboardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudImageClipboardTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudImageClipboardTests/Pods-CloudImageClipboardTests.release.xcconfig"; sourceTree = "<group>"; };
+		F816C9B6A05446C8A664ADDF /* Pods_CloudImageClipboardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudImageClipboardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1CA47A7210545C500F389E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57FAC487E822589273542F8B /* Pods_CloudImageClipboard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1CA47BE210545C600F389E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37B5012F96B6ED51445DFD48 /* Pods_CloudImageClipboardTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1CA47C9210545C600F389E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64263C57FB11EFC4E5D737E8 /* Pods_CloudImageClipboardUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01C53BF44E1C2A1E7F55399A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33F4E99F335421BB7A8B7CFC /* Pods-CloudImageClipboard.debug.xcconfig */,
+				2928F021D1102C8D429E4B4E /* Pods-CloudImageClipboard.release.xcconfig */,
+				0A367CA55E021855C58F57D7 /* Pods-CloudImageClipboardTests.debug.xcconfig */,
+				E6A78BA5749D0EC0BE0AF3B3 /* Pods-CloudImageClipboardTests.release.xcconfig */,
+				D60EF47738BE2A2E28CD0268 /* Pods-CloudImageClipboardUITests.debug.xcconfig */,
+				133AF2BD5CB5F59588153255 /* Pods-CloudImageClipboardUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6E3074147F4DCA8BFF968D5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AC03B6AEA7B0DD938C77D8F /* Pods_CloudImageClipboard.framework */,
+				F816C9B6A05446C8A664ADDF /* Pods_CloudImageClipboardTests.framework */,
+				96DA18D26DAD204C19825584 /* Pods_CloudImageClipboardUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1CA47A1210545C500F389E0 = {
+			isa = PBXGroup;
+			children = (
+				B1CA47AC210545C600F389E0 /* CloudImageClipboard */,
+				B1CA47C4210545C600F389E0 /* CloudImageClipboardTests */,
+				B1CA47CF210545C600F389E0 /* CloudImageClipboardUITests */,
+				B1CA47AB210545C500F389E0 /* Products */,
+				01C53BF44E1C2A1E7F55399A /* Pods */,
+				6E3074147F4DCA8BFF968D5D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B1CA47AB210545C500F389E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1CA47AA210545C500F389E0 /* CloudImageClipboard.app */,
+				B1CA47C1210545C600F389E0 /* CloudImageClipboardTests.xctest */,
+				B1CA47CC210545C600F389E0 /* CloudImageClipboardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1CA47AC210545C600F389E0 /* CloudImageClipboard */ = {
+			isa = PBXGroup;
+			children = (
+				B1CA47AD210545C600F389E0 /* AppDelegate.swift */,
+				B1CA47AF210545C600F389E0 /* ViewController.swift */,
+				B1CA47B1210545C600F389E0 /* Main.storyboard */,
+				B1CA47B7210545C600F389E0 /* Assets.xcassets */,
+				B1CA47B9210545C600F389E0 /* LaunchScreen.storyboard */,
+				B1CA47BC210545C600F389E0 /* Info.plist */,
+				B1CA47B4210545C600F389E0 /* CloudImageClipboard.xcdatamodeld */,
+			);
+			path = CloudImageClipboard;
+			sourceTree = "<group>";
+		};
+		B1CA47C4210545C600F389E0 /* CloudImageClipboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1CA47C5210545C600F389E0 /* CloudImageClipboardTests.swift */,
+				B1CA47C7210545C600F389E0 /* Info.plist */,
+			);
+			path = CloudImageClipboardTests;
+			sourceTree = "<group>";
+		};
+		B1CA47CF210545C600F389E0 /* CloudImageClipboardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B1CA47D0210545C600F389E0 /* CloudImageClipboardUITests.swift */,
+				B1CA47D2210545C600F389E0 /* Info.plist */,
+			);
+			path = CloudImageClipboardUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1CA47A9210545C500F389E0 /* CloudImageClipboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1CA47D5210545C600F389E0 /* Build configuration list for PBXNativeTarget "CloudImageClipboard" */;
+			buildPhases = (
+				A67922381105CAF43DDAD16D /* [CP] Check Pods Manifest.lock */,
+				B1CA47A6210545C500F389E0 /* Sources */,
+				B1CA47A7210545C500F389E0 /* Frameworks */,
+				B1CA47A8210545C500F389E0 /* Resources */,
+				EA4694F190E2BC40BA20CED1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CloudImageClipboard;
+			productName = CloudImageClipboard;
+			productReference = B1CA47AA210545C500F389E0 /* CloudImageClipboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1CA47C0210545C600F389E0 /* CloudImageClipboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1CA47D8210545C600F389E0 /* Build configuration list for PBXNativeTarget "CloudImageClipboardTests" */;
+			buildPhases = (
+				26FC9F2FB7CA1D30570CC8A3 /* [CP] Check Pods Manifest.lock */,
+				B1CA47BD210545C600F389E0 /* Sources */,
+				B1CA47BE210545C600F389E0 /* Frameworks */,
+				B1CA47BF210545C600F389E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1CA47C3210545C600F389E0 /* PBXTargetDependency */,
+			);
+			name = CloudImageClipboardTests;
+			productName = CloudImageClipboardTests;
+			productReference = B1CA47C1210545C600F389E0 /* CloudImageClipboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B1CA47CB210545C600F389E0 /* CloudImageClipboardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1CA47DB210545C600F389E0 /* Build configuration list for PBXNativeTarget "CloudImageClipboardUITests" */;
+			buildPhases = (
+				820F59524F781BA300A5502C /* [CP] Check Pods Manifest.lock */,
+				B1CA47C8210545C600F389E0 /* Sources */,
+				B1CA47C9210545C600F389E0 /* Frameworks */,
+				B1CA47CA210545C600F389E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1CA47CE210545C600F389E0 /* PBXTargetDependency */,
+			);
+			name = CloudImageClipboardUITests;
+			productName = CloudImageClipboardUITests;
+			productReference = B1CA47CC210545C600F389E0 /* CloudImageClipboardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1CA47A2210545C500F389E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Studio VN";
+				TargetAttributes = {
+					B1CA47A9210545C500F389E0 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					B1CA47C0210545C600F389E0 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = B1CA47A9210545C500F389E0;
+					};
+					B1CA47CB210545C600F389E0 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = B1CA47A9210545C500F389E0;
+					};
+				};
+			};
+			buildConfigurationList = B1CA47A5210545C500F389E0 /* Build configuration list for PBXProject "CloudImageClipboard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1CA47A1210545C500F389E0;
+			productRefGroup = B1CA47AB210545C500F389E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1CA47A9210545C500F389E0 /* CloudImageClipboard */,
+				B1CA47C0210545C600F389E0 /* CloudImageClipboardTests */,
+				B1CA47CB210545C600F389E0 /* CloudImageClipboardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1CA47A8210545C500F389E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1CA47BB210545C600F389E0 /* LaunchScreen.storyboard in Resources */,
+				B1CA47B8210545C600F389E0 /* Assets.xcassets in Resources */,
+				B1CA47B3210545C600F389E0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1CA47BF210545C600F389E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1CA47CA210545C600F389E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26FC9F2FB7CA1D30570CC8A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CloudImageClipboardTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		820F59524F781BA300A5502C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CloudImageClipboardUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A67922381105CAF43DDAD16D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CloudImageClipboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA4694F190E2BC40BA20CED1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CloudImageClipboard/Pods-CloudImageClipboard-frameworks.sh",
+				"${PODS_ROOT}/ProjectRomeSdk/ConnectedDevices.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ConnectedDevices.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudImageClipboard/Pods-CloudImageClipboard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1CA47A6210545C500F389E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1CA47B6210545C600F389E0 /* CloudImageClipboard.xcdatamodeld in Sources */,
+				B1CA47AE210545C600F389E0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1CA47BD210545C600F389E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1CA47C6210545C600F389E0 /* CloudImageClipboardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1CA47C8210545C600F389E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1CA47D1210545C600F389E0 /* CloudImageClipboardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1CA47C3210545C600F389E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1CA47A9210545C500F389E0 /* CloudImageClipboard */;
+			targetProxy = B1CA47C2210545C600F389E0 /* PBXContainerItemProxy */;
+		};
+		B1CA47CE210545C600F389E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1CA47A9210545C500F389E0 /* CloudImageClipboard */;
+			targetProxy = B1CA47CD210545C600F389E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B1CA47B1210545C600F389E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1CA47B2210545C600F389E0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B1CA47B9210545C600F389E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1CA47BA210545C600F389E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1CA47D3210545C600F389E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B1CA47D4210545C600F389E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1CA47D6210545C600F389E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33F4E99F335421BB7A8B7CFC /* Pods-CloudImageClipboard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RZDWN728BE;
+				HEADER_SEARCH_PATHS = " $(SRCROOT)/Pods/**";
+				INFOPLIST_FILE = CloudImageClipboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.StudioVN.CloudImageClipboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1CA47D7210545C600F389E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2928F021D1102C8D429E4B4E /* Pods-CloudImageClipboard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RZDWN728BE;
+				HEADER_SEARCH_PATHS = " $(SRCROOT)/Pods/**";
+				INFOPLIST_FILE = CloudImageClipboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.StudioVN.CloudImageClipboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B1CA47D9210545C600F389E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A367CA55E021855C58F57D7 /* Pods-CloudImageClipboardTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RZDWN728BE;
+				INFOPLIST_FILE = CloudImageClipboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.StudioVN.CloudImageClipboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudImageClipboard.app/CloudImageClipboard";
+			};
+			name = Debug;
+		};
+		B1CA47DA210545C600F389E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6A78BA5749D0EC0BE0AF3B3 /* Pods-CloudImageClipboardTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RZDWN728BE;
+				INFOPLIST_FILE = CloudImageClipboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.StudioVN.CloudImageClipboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudImageClipboard.app/CloudImageClipboard";
+			};
+			name = Release;
+		};
+		B1CA47DC210545C600F389E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D60EF47738BE2A2E28CD0268 /* Pods-CloudImageClipboardUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RZDWN728BE;
+				INFOPLIST_FILE = CloudImageClipboardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.StudioVN.CloudImageClipboardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CloudImageClipboard;
+			};
+			name = Debug;
+		};
+		B1CA47DD210545C600F389E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 133AF2BD5CB5F59588153255 /* Pods-CloudImageClipboardUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RZDWN728BE;
+				INFOPLIST_FILE = CloudImageClipboardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.StudioVN.CloudImageClipboardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CloudImageClipboard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1CA47A5210545C500F389E0 /* Build configuration list for PBXProject "CloudImageClipboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1CA47D3210545C600F389E0 /* Debug */,
+				B1CA47D4210545C600F389E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1CA47D5210545C600F389E0 /* Build configuration list for PBXNativeTarget "CloudImageClipboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1CA47D6210545C600F389E0 /* Debug */,
+				B1CA47D7210545C600F389E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1CA47D8210545C600F389E0 /* Build configuration list for PBXNativeTarget "CloudImageClipboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1CA47D9210545C600F389E0 /* Debug */,
+				B1CA47DA210545C600F389E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1CA47DB210545C600F389E0 /* Build configuration list for PBXNativeTarget "CloudImageClipboardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1CA47DC210545C600F389E0 /* Debug */,
+				B1CA47DD210545C600F389E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B1CA47B4210545C600F389E0 /* CloudImageClipboard.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B1CA47B5210545C600F389E0 /* CloudImageClipboard.xcdatamodel */,
+			);
+			currentVersion = B1CA47B5210545C600F389E0 /* CloudImageClipboard.xcdatamodel */;
+			path = CloudImageClipboard.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B1CA47A2210545C500F389E0 /* Project object */;
+}
