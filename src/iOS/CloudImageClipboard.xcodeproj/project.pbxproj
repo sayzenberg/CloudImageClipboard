@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7447D2AE97D788BBF0331CE4 /* Pods_CloudImageClipboardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5495B3EF0CCD726193B004A4 /* Pods_CloudImageClipboardUITests.framework */; };
+		83A7B7DBEC55C34B3BCD31E9 /* Pods_CloudImageClipboardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A72632305575F9D948FDF32 /* Pods_CloudImageClipboardTests.framework */; };
+		A5BE57C61E56DF37DB8DF785 /* Pods_CloudImageClipboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0D22936378FD1462BD7F02C /* Pods_CloudImageClipboard.framework */; };
 		B1868DDD210660B0002AFBB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1868DDC210660B0002AFBB3 /* AppDelegate.swift */; };
 		B1868DDF210660B0002AFBB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1868DDE210660B0002AFBB3 /* ViewController.swift */; };
 		B1868DE2210660B0002AFBB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1868DE0210660B0002AFBB3 /* Main.storyboard */; };
@@ -15,6 +18,7 @@
 		B1868DEA210660B0002AFBB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1868DE8210660B0002AFBB3 /* LaunchScreen.storyboard */; };
 		B1868DF5210660B1002AFBB3 /* CloudImageClipboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1868DF4210660B1002AFBB3 /* CloudImageClipboardTests.swift */; };
 		B1868E00210660B1002AFBB3 /* CloudImageClipboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1868DFF210660B1002AFBB3 /* CloudImageClipboardUITests.swift */; };
+		B1DADFBA21066AA700223CD1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DADFB921066AA700223CD1 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A72632305575F9D948FDF32 /* Pods_CloudImageClipboardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudImageClipboardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A5E36A85676F2ED70FFEB89 /* Pods-CloudImageClipboardUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudImageClipboardUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudImageClipboardUITests/Pods-CloudImageClipboardUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4DF49EE5E7E5B4E9B6275443 /* Pods-CloudImageClipboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudImageClipboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudImageClipboard/Pods-CloudImageClipboard.debug.xcconfig"; sourceTree = "<group>"; };
+		5495B3EF0CCD726193B004A4 /* Pods_CloudImageClipboardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudImageClipboardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6366C854DB27A0F6BE92B7AA /* Pods-CloudImageClipboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudImageClipboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudImageClipboard/Pods-CloudImageClipboard.release.xcconfig"; sourceTree = "<group>"; };
+		ADA013E25708ACE346EBD1A2 /* Pods-CloudImageClipboardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudImageClipboardTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudImageClipboardTests/Pods-CloudImageClipboardTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AFF02F8AC7A6B8812704736D /* Pods-CloudImageClipboardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudImageClipboardTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudImageClipboardTests/Pods-CloudImageClipboardTests.release.xcconfig"; sourceTree = "<group>"; };
 		B1868DD9210660B0002AFBB3 /* CloudImageClipboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudImageClipboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1868DDC210660B0002AFBB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1868DDE210660B0002AFBB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +60,9 @@
 		B1868DFB210660B1002AFBB3 /* CloudImageClipboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudImageClipboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1868DFF210660B1002AFBB3 /* CloudImageClipboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudImageClipboardUITests.swift; sourceTree = "<group>"; };
 		B1868E01210660B1002AFBB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1DADFB921066AA700223CD1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D0D22936378FD1462BD7F02C /* Pods_CloudImageClipboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudImageClipboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3851A32C527196BF1C698C3 /* Pods-CloudImageClipboardUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudImageClipboardUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudImageClipboardUITests/Pods-CloudImageClipboardUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5BE57C61E56DF37DB8DF785 /* Pods_CloudImageClipboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83A7B7DBEC55C34B3BCD31E9 /* Pods_CloudImageClipboardTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +86,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7447D2AE97D788BBF0331CE4 /* Pods_CloudImageClipboardUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68B55A01AAA6A816FD585682 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DF49EE5E7E5B4E9B6275443 /* Pods-CloudImageClipboard.debug.xcconfig */,
+				6366C854DB27A0F6BE92B7AA /* Pods-CloudImageClipboard.release.xcconfig */,
+				ADA013E25708ACE346EBD1A2 /* Pods-CloudImageClipboardTests.debug.xcconfig */,
+				AFF02F8AC7A6B8812704736D /* Pods-CloudImageClipboardTests.release.xcconfig */,
+				D3851A32C527196BF1C698C3 /* Pods-CloudImageClipboardUITests.debug.xcconfig */,
+				4A5E36A85676F2ED70FFEB89 /* Pods-CloudImageClipboardUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B1868DD0210660AF002AFBB3 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +113,8 @@
 				B1868DF3210660B1002AFBB3 /* CloudImageClipboardTests */,
 				B1868DFE210660B1002AFBB3 /* CloudImageClipboardUITests */,
 				B1868DDA210660B0002AFBB3 /* Products */,
+				68B55A01AAA6A816FD585682 /* Pods */,
+				F9434CA79011E3FB0D42AFCC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +138,7 @@
 				B1868DE8210660B0002AFBB3 /* LaunchScreen.storyboard */,
 				B1868DEB210660B0002AFBB3 /* Info.plist */,
 				B1868DE3210660B0002AFBB3 /* CloudImageClipboard.xcdatamodeld */,
+				B1DADFB921066AA700223CD1 /* Constants.swift */,
 			);
 			path = CloudImageClipboard;
 			sourceTree = "<group>";
@@ -128,6 +161,16 @@
 			path = CloudImageClipboardUITests;
 			sourceTree = "<group>";
 		};
+		F9434CA79011E3FB0D42AFCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0D22936378FD1462BD7F02C /* Pods_CloudImageClipboard.framework */,
+				0A72632305575F9D948FDF32 /* Pods_CloudImageClipboardTests.framework */,
+				5495B3EF0CCD726193B004A4 /* Pods_CloudImageClipboardUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1868E04210660B1002AFBB3 /* Build configuration list for PBXNativeTarget "CloudImageClipboard" */;
 			buildPhases = (
+				8432AD148AB102DD9E42AFFC /* [CP] Check Pods Manifest.lock */,
 				B1868DD5210660B0002AFBB3 /* Sources */,
 				B1868DD6210660B0002AFBB3 /* Frameworks */,
 				B1868DD7210660B0002AFBB3 /* Resources */,
+				852C630113952472EEB59CCA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1868E07210660B1002AFBB3 /* Build configuration list for PBXNativeTarget "CloudImageClipboardTests" */;
 			buildPhases = (
+				DFB7B647054B0B92ADFACD00 /* [CP] Check Pods Manifest.lock */,
 				B1868DEC210660B1002AFBB3 /* Sources */,
 				B1868DED210660B1002AFBB3 /* Frameworks */,
 				B1868DEE210660B1002AFBB3 /* Resources */,
@@ -170,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1868E0A210660B1002AFBB3 /* Build configuration list for PBXNativeTarget "CloudImageClipboardUITests" */;
 			buildPhases = (
+				3B3DBE52174C81B06ABA1402 /* [CP] Check Pods Manifest.lock */,
 				B1868DF7210660B1002AFBB3 /* Sources */,
 				B1868DF8210660B1002AFBB3 /* Frameworks */,
 				B1868DF9210660B1002AFBB3 /* Resources */,
@@ -254,6 +301,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3B3DBE52174C81B06ABA1402 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CloudImageClipboardUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8432AD148AB102DD9E42AFFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CloudImageClipboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		852C630113952472EEB59CCA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CloudImageClipboard/Pods-CloudImageClipboard-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudImageClipboard/Pods-CloudImageClipboard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFB7B647054B0B92ADFACD00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CloudImageClipboardTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B1868DD5210660B0002AFBB3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -262,6 +384,7 @@
 				B1868DE5210660B0002AFBB3 /* CloudImageClipboard.xcdatamodeld in Sources */,
 				B1868DDF210660B0002AFBB3 /* ViewController.swift in Sources */,
 				B1868DDD210660B0002AFBB3 /* AppDelegate.swift in Sources */,
+				B1DADFBA21066AA700223CD1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +555,7 @@
 		};
 		B1868E05210660B1002AFBB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DF49EE5E7E5B4E9B6275443 /* Pods-CloudImageClipboard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +574,7 @@
 		};
 		B1868E06210660B1002AFBB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6366C854DB27A0F6BE92B7AA /* Pods-CloudImageClipboard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +593,7 @@
 		};
 		B1868E08210660B1002AFBB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADA013E25708ACE346EBD1A2 /* Pods-CloudImageClipboardTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -489,6 +615,7 @@
 		};
 		B1868E09210660B1002AFBB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFF02F8AC7A6B8812704736D /* Pods-CloudImageClipboardTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +637,7 @@
 		};
 		B1868E0B210660B1002AFBB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3851A32C527196BF1C698C3 /* Pods-CloudImageClipboardUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +658,7 @@
 		};
 		B1868E0C210660B1002AFBB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A5E36A85676F2ED70FFEB89 /* Pods-CloudImageClipboardUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
