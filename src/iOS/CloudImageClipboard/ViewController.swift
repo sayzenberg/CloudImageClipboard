@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  CloudImageClipboard
 //
-//  Created by Stanley Ayzenberg on 7/22/18.
+//  Created by Stanley Ayzenberg on 7/23/18.
 //  Copyright © 2018 Studio VN. All rights reserved.
 //
 
@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
+
 }
 
