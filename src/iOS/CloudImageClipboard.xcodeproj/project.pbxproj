@@ -18,6 +18,7 @@
 		B1868DEA210660B0002AFBB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1868DE8210660B0002AFBB3 /* LaunchScreen.storyboard */; };
 		B1868DF5210660B1002AFBB3 /* CloudImageClipboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1868DF4210660B1002AFBB3 /* CloudImageClipboardTests.swift */; };
 		B1868E00210660B1002AFBB3 /* CloudImageClipboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1868DFF210660B1002AFBB3 /* CloudImageClipboardUITests.swift */; };
+		B1C7598D2106F42400331A58 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C7598C2106F42400331A58 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		B1868DFF210660B1002AFBB3 /* CloudImageClipboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudImageClipboardUITests.swift; sourceTree = "<group>"; };
 		B1868E01210660B1002AFBB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1C7598B2106978800331A58 /* CloudImageClipboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudImageClipboard.entitlements; sourceTree = "<group>"; };
+		B1C7598C2106F42400331A58 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D0D22936378FD1462BD7F02C /* Pods_CloudImageClipboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudImageClipboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3851A32C527196BF1C698C3 /* Pods-CloudImageClipboardUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudImageClipboardUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudImageClipboardUITests/Pods-CloudImageClipboardUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +140,7 @@
 				B1868DE8210660B0002AFBB3 /* LaunchScreen.storyboard */,
 				B1868DEB210660B0002AFBB3 /* Info.plist */,
 				B1868DE3210660B0002AFBB3 /* CloudImageClipboard.xcdatamodeld */,
+				B1C7598C2106F42400331A58 /* User.swift */,
 			);
 			path = CloudImageClipboard;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1C7598D2106F42400331A58 /* User.swift in Sources */,
 				B1868DE5210660B0002AFBB3 /* CloudImageClipboard.xcdatamodeld in Sources */,
 				B1868DDF210660B0002AFBB3 /* ViewController.swift in Sources */,
 				B1868DDD210660B0002AFBB3 /* AppDelegate.swift in Sources */,

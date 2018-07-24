@@ -34,7 +34,9 @@ class ViewController: UIViewController {
     //MARK: Actions
     
     @IBAction func signIn(_ sender: UIButton) {
-        if let keyData = Locksmith.loadDataForUserAccount(userAccount: "dummyuseraccount")
+        var user: User?
+        
+        if let keyData = Locksmith.loadDataForUserAccount(userAccount: "OAUTH")
         {
             if let expiration = keyData["expiration"]
             {
@@ -44,22 +46,26 @@ class ViewController: UIViewController {
                 formatter.timeZone = TimeZone(secondsFromGMT: 0)
                 if (formatter.date(from: expirationString)! < Date.init())
                 {
-                    refreshToken(credentialData: keyData)
+                    user = refreshToken(credentialData: keyData)
                     return
                 }
                 else
                 {
-                    loadCredentials()
+                    user = loadCredentials()
                     return
                 }
             }
         }
         
-        self.handleUserSignIn()
+        user = self.handleUserSignIn()
+        
+        
     }
     
-    func handleUserSignIn()
+    func handleUserSignIn() -> User?
     {
+        var user: User? = nil
+        
         oauthswift.authorizeURLHandler = SafariURLHandler(viewController: self, oauthSwift: oauthswift)
         let _ = oauthswift.authorize(
             withCallbackURL: URL(string: "msal03890202-e68d-4781-910a-586a45e29df0://auth")!,
@@ -72,6 +78,7 @@ class ViewController: UIViewController {
                 do
                 {
                     try self.saveCredentials(credential: credential)
+                    user = User(authTicket: credential.oauthToken, refreshTicket: credential.oauthRefreshToken, ticketExpiration: credential.oauthTokenExpiresAt!)
                 }
                 catch
                 {
@@ -82,10 +89,13 @@ class ViewController: UIViewController {
         },
             failure: { error in
         })
+        
+        return user
     }
     
-    func refreshToken(credentialData: Dictionary<String, Any>)
+    func refreshToken(credentialData: Dictionary<String, Any>) -> User?
     {
+        var user: User? = nil
         if let refreshToken = credentialData["refresh_token"]
         {
             oauthswift.renewAccessToken(
@@ -97,6 +107,7 @@ class ViewController: UIViewController {
                     do
                     {
                         try self.saveCredentials(credential: credential)
+                        user = User(authTicket: credential.oauthToken, refreshTicket: credential.oauthRefreshToken, ticketExpiration: credential.oauthTokenExpiresAt!)
                     }
                     catch
                     {
@@ -108,8 +119,10 @@ class ViewController: UIViewController {
         }
         else
         {
-            handleUserSignIn()
+            user = handleUserSignIn()
         }
+        
+        return user
     }
     
     func saveCredentials(credential: OAuthSwiftCredential)
@@ -123,17 +136,31 @@ class ViewController: UIViewController {
         try Locksmith.updateData(data: [
             "access_token": credential.oauthToken,
             "refresh_token": credential.oauthRefreshToken,
-            "expiration": expirationString], forUserAccount: "dummyuseraccount")
+            "expiration": expirationString], forUserAccount: "OAUTH")
+        
     }
     
-    func loadCredentials()
+    func loadCredentials() -> User?
     {
-        let keyData = Locksmith.loadDataForUserAccount(userAccount: "dummyuseraccount")
+        var user: User? = nil
+        if let keyData = Locksmith.loadDataForUserAccount(userAccount: "OAUTH")
+        {
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
+            formatter.timeZone = TimeZone(secondsFromGMT: 0)
+            let accessToken = keyData["access_token"] as! String
+            let refreshToken = keyData["refresh_token"] as! String
+            let expirationString = keyData["expiration"] as! String
+            let expiration = formatter.date(from: expirationString)
+            
+            let alert = UIAlertController(title: "Got a token!", message: accessToken, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Close", style: .cancel, handler: nil))
+            self.present(alert, animated: true)
+            
+            user = User(authTicket: accessToken, refreshTicket: refreshToken, ticketExpiration: expiration!)
+        }
         
-        let accessToken = keyData!["access_token"] as! String;
-        let alert = UIAlertController(title: "Got a token!", message: accessToken, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Close", style: .cancel, handler: nil))
-        self.present(alert, animated: true)
+        return user
     }
 }
 
