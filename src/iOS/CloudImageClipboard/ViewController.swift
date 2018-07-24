@@ -12,7 +12,7 @@ import Locksmith
 
 class ViewController: UIViewController {
     //MARK: Properties
-    var oauthswift: OAuth2Swift?
+    var oauthswift: OAuth2Swift!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +45,7 @@ class ViewController: UIViewController {
                 if (formatter.date(from: expirationString)! < Date.init())
                 {
                     refreshToken(credentialData: keyData)
+                    return
                 }
                 else
                 {
@@ -53,15 +54,14 @@ class ViewController: UIViewController {
                 }
             }
         }
-        else
-        {
-            self.handleUserSignIn()
-        }
+        
+        self.handleUserSignIn()
     }
     
     func handleUserSignIn()
     {
-        let _ = oauthswift?.authorize(
+        oauthswift.authorizeURLHandler = SafariURLHandler(viewController: self, oauthSwift: oauthswift)
+        let _ = oauthswift.authorize(
             withCallbackURL: URL(string: "msal03890202-e68d-4781-910a-586a45e29df0://auth")!,
             scope: "UserActivity.ReadWrite.CreatedByApp offline_access",
             state: generateState(withLength: 32),
@@ -88,7 +88,7 @@ class ViewController: UIViewController {
     {
         if let refreshToken = credentialData["refresh_token"]
         {
-            oauthswift?.renewAccessToken(
+            oauthswift.renewAccessToken(
                 withRefreshToken: refreshToken as! String,
                 success: { credential, response, paraters in
                     let alert = UIAlertController(title: "Got a token!", message: credential.oauthToken, preferredStyle: .alert)
