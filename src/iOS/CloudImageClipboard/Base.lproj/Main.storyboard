@@ -27,11 +27,18 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWE-vH-LE1">
-                                        <rect key="frame" x="164" y="50.333333333333343" width="47" height="373.66666666666663"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWE-vH-LE1">
+                                        <rect key="frame" x="164" y="50.333333333333343" width="47" height="313.66666666666663"/>
                                         <state key="normal" title="Sign In"/>
                                         <connections>
                                             <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NsP-j0-FUV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFX-zk-zqZ">
+                                        <rect key="frame" x="144.66666666666666" y="394" width="86" height="30"/>
+                                        <state key="normal" title="Post Activity"/>
+                                        <connections>
+                                            <action selector="postActivity:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iNx-CX-KK8"/>
                                         </connections>
                                     </button>
                                 </subviews>

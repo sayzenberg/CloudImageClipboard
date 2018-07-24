@@ -13,12 +13,13 @@ import Locksmith
 class ViewController: UIViewController {
     //MARK: Properties
     var oauthswift: OAuth2Swift!
+    var signedInUser: User?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         oauthswift = OAuth2Swift(
-            consumerKey: "03890202-e68d-4781-910a-586a45e29df0",
+            consumerKey: "8b45908d-7e92-4e34-9ade-e69aebee04f0",
             consumerSecret: "",
             authorizeUrl:   "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
             accessTokenUrl: "https://login.microsoftonline.com/common/oauth2/v2.0/token",
@@ -34,7 +35,6 @@ class ViewController: UIViewController {
     //MARK: Actions
     
     @IBAction func signIn(_ sender: UIButton) {
-        var user: User?
         
         if let keyData = Locksmith.loadDataForUserAccount(userAccount: "OAUTH")
         {
@@ -46,21 +46,26 @@ class ViewController: UIViewController {
                 formatter.timeZone = TimeZone(secondsFromGMT: 0)
                 if (formatter.date(from: expirationString)! < Date.init())
                 {
-                    user = refreshToken(credentialData: keyData)
+                    self.signedInUser = refreshToken(credentialData: keyData)
                     return
                 }
                 else
                 {
-                    user = loadCredentials()
+                    self.signedInUser = loadCredentials()
                     return
                 }
             }
         }
         
-        user = self.handleUserSignIn()
-        
-        
+        self.signedInUser = self.handleUserSignIn()
     }
+    
+    @IBAction func postActivity(_ sender: UIButton) {
+        let client = GraphClient(ticket: self.signedInUser!.authTicket!)
+        
+        client.putImageActivity(activityId: "test123", imageUrl: "test")
+    }
+    
     
     func handleUserSignIn() -> User?
     {
@@ -68,7 +73,7 @@ class ViewController: UIViewController {
         
         oauthswift.authorizeURLHandler = SafariURLHandler(viewController: self, oauthSwift: oauthswift)
         let _ = oauthswift.authorize(
-            withCallbackURL: URL(string: "msal03890202-e68d-4781-910a-586a45e29df0://auth")!,
+            withCallbackURL: URL(string: "msal8b45908d-7e92-4e34-9ade-e69aebee04f0://auth")!,
             scope: "UserActivity.ReadWrite.CreatedByApp offline_access",
             state: generateState(withLength: 32),
             success: { credential, response, parameters in
@@ -79,6 +84,7 @@ class ViewController: UIViewController {
                 {
                     try self.saveCredentials(credential: credential)
                     user = User(authTicket: credential.oauthToken, refreshTicket: credential.oauthRefreshToken, ticketExpiration: credential.oauthTokenExpiresAt!)
+                    self.signedInUser = user
                 }
                 catch
                 {
@@ -108,6 +114,7 @@ class ViewController: UIViewController {
                     {
                         try self.saveCredentials(credential: credential)
                         user = User(authTicket: credential.oauthToken, refreshTicket: credential.oauthRefreshToken, ticketExpiration: credential.oauthTokenExpiresAt!)
+                        self.signedInUser = user
                     }
                     catch
                     {

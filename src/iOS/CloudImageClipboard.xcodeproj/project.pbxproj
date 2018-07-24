@@ -18,6 +18,8 @@
 		B1868DEA210660B0002AFBB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1868DE8210660B0002AFBB3 /* LaunchScreen.storyboard */; };
 		B1868DF5210660B1002AFBB3 /* CloudImageClipboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1868DF4210660B1002AFBB3 /* CloudImageClipboardTests.swift */; };
 		B1868E00210660B1002AFBB3 /* CloudImageClipboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1868DFF210660B1002AFBB3 /* CloudImageClipboardUITests.swift */; };
+		B1A93BCE2106FE8400F8AB14 /* GraphClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A93BCD2106FE8400F8AB14 /* GraphClient.swift */; };
+		B1A93BD02107A0F100F8AB14 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A93BCF2107A0F100F8AB14 /* Activity.swift */; };
 		B1C7598D2106F42400331A58 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C7598C2106F42400331A58 /* User.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,8 @@
 		B1868DFB210660B1002AFBB3 /* CloudImageClipboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudImageClipboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1868DFF210660B1002AFBB3 /* CloudImageClipboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudImageClipboardUITests.swift; sourceTree = "<group>"; };
 		B1868E01210660B1002AFBB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1A93BCD2106FE8400F8AB14 /* GraphClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphClient.swift; sourceTree = "<group>"; };
+		B1A93BCF2107A0F100F8AB14 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Activity.swift; path = Models/Activity.swift; sourceTree = "<group>"; };
 		B1C7598B2106978800331A58 /* CloudImageClipboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudImageClipboard.entitlements; sourceTree = "<group>"; };
 		B1C7598C2106F42400331A58 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D0D22936378FD1462BD7F02C /* Pods_CloudImageClipboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudImageClipboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +145,8 @@
 				B1868DEB210660B0002AFBB3 /* Info.plist */,
 				B1868DE3210660B0002AFBB3 /* CloudImageClipboard.xcdatamodeld */,
 				B1C7598C2106F42400331A58 /* User.swift */,
+				B1A93BCD2106FE8400F8AB14 /* GraphClient.swift */,
+				B1A93BCF2107A0F100F8AB14 /* Activity.swift */,
 			);
 			path = CloudImageClipboard;
 			sourceTree = "<group>";
@@ -352,13 +358,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CloudImageClipboard/Pods-CloudImageClipboard-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Locksmith/Locksmith.framework",
 				"${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Locksmith.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -390,10 +402,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1A93BD02107A0F100F8AB14 /* Activity.swift in Sources */,
 				B1C7598D2106F42400331A58 /* User.swift in Sources */,
 				B1868DE5210660B0002AFBB3 /* CloudImageClipboard.xcdatamodeld in Sources */,
 				B1868DDF210660B0002AFBB3 /* ViewController.swift in Sources */,
 				B1868DDD210660B0002AFBB3 /* AppDelegate.swift in Sources */,
+				B1A93BCE2106FE8400F8AB14 /* GraphClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
