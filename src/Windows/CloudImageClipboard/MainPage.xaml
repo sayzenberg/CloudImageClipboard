@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="CloudImageClipboard.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CloudImageClipboard"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel x:Name="MainPanel">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <Button Content="Add from clipboard" Click="OnAddImageClicked" HorizontalAlignment="Center" Margin="5,0" />
+                <Button Content="Delete all activities" Click="OnDeleteImagesClicked" HorizontalAlignment="Center" Margin="5,0" />
+                <Button Content="Sign in" Click="OnLoginClicked" HorizontalAlignment="Center" Margin="5,0"/>
+                <Button Content="Sign out" Click="OnLogoutClicked" HorizontalAlignment="Center" Margin="5,0"/>
+            </StackPanel>
+            
+            <GridView ItemsSource="{Binding Images, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}">
+                <GridView.ItemTemplate>
+                    <DataTemplate>
+                        <Image 
+                            Source="{Binding ImageUrl}" 
+                            Width="200"
+                            Height="200"
+                            Tapped="UIElement_OnTapped"
+                            Margin="5,5"
+                        />
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+            </GridView>
+        </StackPanel>
+        
+
+    </Grid>
+</Page>
