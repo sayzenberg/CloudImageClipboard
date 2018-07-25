@@ -19,12 +19,13 @@ class GraphClient
         self.ticket = ticket
     }
     
-    func putImageActivity(activityId: String, imageUrl: String)
+    func putImageActivity(imageUrl: String)
     {
+        let activityId = base64ToBase64url(base64: imageUrl.data(using: .utf8)!.base64EncodedString())
         let url = "https://graph.microsoft.com/v1.0/me/activities/\(activityId)"
         let parameters: Parameters = [
             "appActivityId": activityId,
-            "activitySourceHost": "cloudimageclipboard.com",
+            "activitySourceHost": "studiovn.life",
             "activationUrl": "blah",
             "visualElements": [
                 "displayText": "Test"
@@ -43,5 +44,13 @@ class GraphClient
                 let activityResponse = response.result.value
                 print(activityResponse?.appActivityID)
         }
+    }
+    
+    func base64ToBase64url(base64: String) -> String {
+        let base64url = base64
+            .replacingOccurrences(of: "+", with: "-")
+            .replacingOccurrences(of: "/", with: "_")
+            .replacingOccurrences(of: "=", with: "")
+        return base64url
     }
 }

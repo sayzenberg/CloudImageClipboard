@@ -19,37 +19,53 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Iv9-sF-dIU">
-                                <rect key="frame" x="0.0" y="194" width="375" height="424"/>
+                                <rect key="frame" x="0.0" y="331" width="375" height="150"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome! Please sign in." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSW-2i-G0b">
-                                        <rect key="frame" x="93.000000000000014" y="0.0" width="189.33333333333337" height="20.333333333333332"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWE-vH-LE1">
-                                        <rect key="frame" x="164" y="50.333333333333343" width="47" height="313.66666666666663"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWE-vH-LE1">
+                                        <rect key="frame" x="164" y="0.0" width="47" height="30"/>
                                         <state key="normal" title="Sign In"/>
                                         <connections>
                                             <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NsP-j0-FUV"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFX-zk-zqZ">
-                                        <rect key="frame" x="144.66666666666666" y="394" width="86" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzS-a5-Ljb">
+                                        <rect key="frame" x="157.66666666666666" y="60" width="60" height="30"/>
+                                        <state key="normal" title="Sign Out"/>
+                                        <connections>
+                                            <action selector="signOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zzV-fj-ZDL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFX-zk-zqZ">
+                                        <rect key="frame" x="144.66666666666666" y="120" width="86" height="30"/>
                                         <state key="normal" title="Post Activity"/>
                                         <connections>
                                             <action selector="postActivity:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iNx-CX-KK8"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="uzS-a5-Ljb" firstAttribute="top" secondItem="sWE-vH-LE1" secondAttribute="bottom" constant="30" id="J4k-s2-NnM"/>
+                                    <constraint firstItem="LFX-zk-zqZ" firstAttribute="top" secondItem="uzS-a5-Ljb" secondAttribute="bottom" constant="30" id="jfQ-jY-qUv"/>
+                                </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome! Please sign in." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSW-2i-G0b">
+                                <rect key="frame" x="87.666666666666686" y="85" width="200" height="20.333333333333329"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="xGO-e8-yky"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Iv9-sF-dIU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="3jR-rM-Npp"/>
                             <constraint firstItem="Iv9-sF-dIU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HoI-vr-4d2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Iv9-sF-dIU" secondAttribute="trailing" id="Sx4-eC-MOi"/>
+                            <constraint firstItem="tSW-2i-G0b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aub-as-ZdE"/>
                             <constraint firstItem="Iv9-sF-dIU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dAA-1l-tyR"/>
+                            <constraint firstItem="tSW-2i-G0b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="41" id="lU1-No-Tp8"/>
+                            <constraint firstItem="tSW-2i-G0b" firstAttribute="centerX" secondItem="Iv9-sF-dIU" secondAttribute="centerX" id="qqY-iR-dIX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

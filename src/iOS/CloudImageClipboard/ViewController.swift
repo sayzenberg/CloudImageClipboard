@@ -60,10 +60,35 @@ class ViewController: UIViewController {
         self.signedInUser = self.handleUserSignIn()
     }
     
+    @IBAction func signOut(_ sender: UIButton) {
+        self.signedInUser = nil
+        do
+        {
+            try Locksmith.deleteDataForUserAccount(userAccount: "OAUTH")
+        }
+        catch
+        {
+        }
+    }
+    
+    
     @IBAction func postActivity(_ sender: UIButton) {
         let client = GraphClient(ticket: self.signedInUser!.authTicket!)
-        
-        client.putImageActivity(activityId: "test123", imageUrl: "test")
+        let pasteboard: UIPasteboard = UIPasteboard.general
+        var imageUrl: String = ""
+        if pasteboard.hasStrings
+        {
+            imageUrl = pasteboard.string!
+        }
+        else if pasteboard.hasURLs
+        {
+            imageUrl = (pasteboard.url?.absoluteString)!
+        }
+        else
+        {
+            return
+        }
+        client.putImageActivity(imageUrl: imageUrl)
     }
     
     
