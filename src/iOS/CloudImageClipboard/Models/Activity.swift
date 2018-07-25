@@ -8,24 +8,6 @@ class Activity: Mappable {
     var contentInfo: ContentInfo?
     var visualElements: VisualInfo?
     var historyItems: [HistoryItem]?
-//
-//    init(appActivityID: String, activitySourceHost: String, userTimezone: String, appDisplayName: String, activationURL: String, contentURL: String, fallbackURL: String, createdDateTime: String, lastModifiedDateTime: String, expirationDateTime: String, id: String, status: String, contentInfo: ContentInfo, visualElements: VisualInfo, historyItems: [HistoryItem]) {
-//        self.appActivityID = appActivityID
-//        self.activitySourceHost = activitySourceHost
-//        self.userTimezone = userTimezone
-//        self.appDisplayName = appDisplayName
-//        self.activationURL = activationURL
-//        self.contentURL = contentURL
-//        self.fallbackURL = fallbackURL
-//        self.createdDateTime = createdDateTime
-//        self.lastModifiedDateTime = lastModifiedDateTime
-//        self.expirationDateTime = expirationDateTime
-//        self.id = id
-//        self.status = status
-//        self.contentInfo = contentInfo
-//        self.visualElements = visualElements
-//        self.historyItems = historyItems
-//    }
     
     required init?(map: Map) {
         

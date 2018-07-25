@@ -9,6 +9,7 @@
 import UIKit
 import OAuthSwift
 import Locksmith
+import PromiseKit
 
 class ViewController: UIViewController {
     //MARK: Properties
@@ -71,6 +72,20 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func getActivities(_ sender: UIButton) {
+        let client = GraphClient(ticket: self.signedInUser!.authTicket!)
+        var imageUrl: String = ""
+        client.getImageActivities().then { activities -> Promise<UIImage> in
+            imageUrl = activities.value![0].contentInfo!.imageUrl!
+            return client.getImage(imageUrl: imageUrl)
+        }.map { image in
+            let pasteboard: UIPasteboard = UIPasteboard.general
+            pasteboard.image = image
+            let alert = UIAlertController(title: "Image copied to clipboard!", message: "The most recent image in your feed is on your clipboard now. Go ahead and paste it into your preferred app.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Close", style: .cancel, handler: nil))
+            self.present(alert, animated: true)
+        }
+    }
     
     @IBAction func postActivity(_ sender: UIButton) {
         let client = GraphClient(ticket: self.signedInUser!.authTicket!)
@@ -88,7 +103,13 @@ class ViewController: UIViewController {
         {
             return
         }
-        client.putImageActivity(imageUrl: imageUrl)
+        
+        client.putImageActivity(imageUrl: imageUrl).map { activity in
+            let alert = UIAlertController(title: "Image uploaded to Graph! ", message: "Uploaded image to Graph. Activity ID: " + activity.id!, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Close", style: .cancel, handler: nil))
+            self.present(alert, animated: true)
+        }
+
     }
     
     

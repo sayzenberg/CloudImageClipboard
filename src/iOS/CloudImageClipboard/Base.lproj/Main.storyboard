@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Iv9-sF-dIU">
-                                <rect key="frame" x="0.0" y="331" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="301" width="375" height="210"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWE-vH-LE1">
                                         <rect key="frame" x="164" y="0.0" width="47" height="30"/>
@@ -35,8 +35,15 @@
                                             <action selector="signOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zzV-fj-ZDL"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7em-l9-3Nu">
+                                        <rect key="frame" x="142" y="120" width="91" height="30"/>
+                                        <state key="normal" title="Get Activities"/>
+                                        <connections>
+                                            <action selector="getActivities:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hgs-M8-NcY"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFX-zk-zqZ">
-                                        <rect key="frame" x="144.66666666666666" y="120" width="86" height="30"/>
+                                        <rect key="frame" x="144.66666666666666" y="180" width="86" height="30"/>
                                         <state key="normal" title="Post Activity"/>
                                         <connections>
                                             <action selector="postActivity:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iNx-CX-KK8"/>
@@ -45,7 +52,8 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="uzS-a5-Ljb" firstAttribute="top" secondItem="sWE-vH-LE1" secondAttribute="bottom" constant="30" id="J4k-s2-NnM"/>
-                                    <constraint firstItem="LFX-zk-zqZ" firstAttribute="top" secondItem="uzS-a5-Ljb" secondAttribute="bottom" constant="30" id="jfQ-jY-qUv"/>
+                                    <constraint firstItem="7em-l9-3Nu" firstAttribute="top" secondItem="uzS-a5-Ljb" secondAttribute="bottom" constant="30" id="Mx2-bu-K1M"/>
+                                    <constraint firstItem="LFX-zk-zqZ" firstAttribute="top" secondItem="7em-l9-3Nu" secondAttribute="bottom" constant="30" id="Une-ri-DpR"/>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome! Please sign in." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSW-2i-G0b">

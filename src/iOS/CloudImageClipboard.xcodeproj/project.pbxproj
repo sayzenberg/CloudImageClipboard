@@ -10,6 +10,7 @@
 		7447D2AE97D788BBF0331CE4 /* Pods_CloudImageClipboardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5495B3EF0CCD726193B004A4 /* Pods_CloudImageClipboardUITests.framework */; };
 		83A7B7DBEC55C34B3BCD31E9 /* Pods_CloudImageClipboardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A72632305575F9D948FDF32 /* Pods_CloudImageClipboardTests.framework */; };
 		A5BE57C61E56DF37DB8DF785 /* Pods_CloudImageClipboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0D22936378FD1462BD7F02C /* Pods_CloudImageClipboard.framework */; };
+		B12BA41E2108705D00454EA2 /* GetActivitiesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12BA41D2108705D00454EA2 /* GetActivitiesResponseModel.swift */; };
 		B1868DDD210660B0002AFBB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1868DDC210660B0002AFBB3 /* AppDelegate.swift */; };
 		B1868DDF210660B0002AFBB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1868DDE210660B0002AFBB3 /* ViewController.swift */; };
 		B1868DE2210660B0002AFBB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1868DE0210660B0002AFBB3 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		6366C854DB27A0F6BE92B7AA /* Pods-CloudImageClipboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudImageClipboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudImageClipboard/Pods-CloudImageClipboard.release.xcconfig"; sourceTree = "<group>"; };
 		ADA013E25708ACE346EBD1A2 /* Pods-CloudImageClipboardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudImageClipboardTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudImageClipboardTests/Pods-CloudImageClipboardTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AFF02F8AC7A6B8812704736D /* Pods-CloudImageClipboardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudImageClipboardTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudImageClipboardTests/Pods-CloudImageClipboardTests.release.xcconfig"; sourceTree = "<group>"; };
+		B12BA41D2108705D00454EA2 /* GetActivitiesResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GetActivitiesResponseModel.swift; path = Models/GetActivitiesResponseModel.swift; sourceTree = "<group>"; };
 		B1868DD9210660B0002AFBB3 /* CloudImageClipboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudImageClipboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1868DDC210660B0002AFBB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1868DDE210660B0002AFBB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				B1C7598C2106F42400331A58 /* User.swift */,
 				B1A93BCD2106FE8400F8AB14 /* GraphClient.swift */,
 				B1A93BCF2107A0F100F8AB14 /* Activity.swift */,
+				B12BA41D2108705D00454EA2 /* GetActivitiesResponseModel.swift */,
 			);
 			path = CloudImageClipboard;
 			sourceTree = "<group>";
@@ -359,18 +362,22 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CloudImageClipboard/Pods-CloudImageClipboard-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Locksmith/Locksmith.framework",
 				"${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Locksmith.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -402,6 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B12BA41E2108705D00454EA2 /* GetActivitiesResponseModel.swift in Sources */,
 				B1A93BD02107A0F100F8AB14 /* Activity.swift in Sources */,
 				B1C7598D2106F42400331A58 /* User.swift in Sources */,
 				B1868DE5210660B0002AFBB3 /* CloudImageClipboard.xcdatamodeld in Sources */,
