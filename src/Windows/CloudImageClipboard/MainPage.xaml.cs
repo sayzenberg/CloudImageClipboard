@@ -33,7 +33,7 @@
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
             GraphServiceClient client = AuthenticationHelper.GetAuthenticatedClient();
-            var allActivities = await client.Me.Activities.Recent().Request().GetAsync();
+            var allActivities = await client.Me.Activities.Request().GetAsync();
             this.viewModel = new MainPageViewModel();
             foreach (var activity in allActivities.CurrentPage)
             {
@@ -108,7 +108,7 @@
             {
                 var requestMessage = requestBuilder.GetHttpRequestMessage();
                 requestMessage.Method = HttpMethod.Delete;
-                requestMessage.RequestUri = new Uri(requestMessage.RequestUri.AbsoluteUri + $"/{activity.AppActivityId}");
+                requestMessage.RequestUri = new Uri(requestMessage.RequestUri.AbsoluteUri + $"/{activity.Id}");
                 requestMessage.Headers.Add("Authorization", $"Bearer {AuthenticationHelper.TokenForUser}");
                 //var response1 = await httpClient.SendAsync(requestMessage);
                 var response2 = await client.HttpProvider.SendAsync(requestMessage);
